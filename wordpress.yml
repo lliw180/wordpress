@@ -66,8 +66,13 @@
           WORDPRESS_DB_PASSWORD: wordpress_password
           WORDPRESS_DB_NAME: wordpress
         ports:
-          - "8080:80"
+          - "8089:80"
         networks:
           - name: wordpress2-net
         volumes:
           - wordpress2-data:/var/www/html
+
+          volumes:
+  wordpress2-db-data:
+  wordpress2-data:
+
