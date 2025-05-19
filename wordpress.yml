@@ -16,7 +16,7 @@
         executable: pip3
       tags: install
 
-    - name: Create Docker network for WordPress 2
+    - name: Create Docker network for WordPress 1
       community.docker.docker_network:
         name: wordpress2-net
         state: present
@@ -60,7 +60,7 @@
           WORDPRESS_DB_PASSWORD: wordpress_password
           WORDPRESS_DB_NAME: wordpress
         ports:
-          - "8082:80"
+          - "8080:80"
         networks:
           - name: wordpress2-net
         volumes:
