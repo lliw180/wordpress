@@ -72,7 +72,4 @@
         volumes:
           - wordpress2-data:/var/www/html
 
-          volumes:
-  wordpress2-db-data:
-  wordpress2-data:
 
